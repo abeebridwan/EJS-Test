@@ -33,9 +33,9 @@ body {
   align-items: flex-end;
   border-right: 2px solid #969997;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .columnOne {
-    flex-basis: 27%;
+    flex-basis: 23%;
   }
 }
 .quantity {
