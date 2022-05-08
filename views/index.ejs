@@ -17,12 +17,16 @@
     <div class="container">
       <div class="columnOne">
         <div class="quantity">
-          <p class="qText">Quantity</p>
-          <form>
-            <input id="input" type="text" placeholder="Type here" />
-          </form>
+          <div class="qContainer">
+            <h4 class="qText">Quantity</h4>
+            <form>
+              <input id="input" type="text" placeholder="Type here"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Type here'" />
+            </form>
+          </div>
+          <div class="smallBox">OBJ1</div>
         </div>
-        <div class="smallBox">OBJ1</div>
       </div>
       <div class="columnTwo">
         <div class="qShow">
