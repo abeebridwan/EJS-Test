@@ -115,18 +115,18 @@ body {
 .qBox {
   border: 2px solid #969997;
   background-color: #b5b3b3;
-  height: 9rem;
+  height: 7.5rem;
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 .qBox:first-child {
   margin-top: 0;
 }
 .qIndex {
-  height: 6rem;
-  width: 6rem;
+  height: 5.5rem;
+  width: 5.5rem;
   border-radius: 50%;
   background-color: #e3e1e1;
   display: flex;
