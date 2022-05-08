@@ -12,6 +12,28 @@
     />
     <link rel="stylesheet" href="index.css" />
     <title>EJS Test</title>
+    <script>
+      function getData() {
+        const inputValue = document.getElementById("input").value;
+        const documentFragment = document.createDocumentFragment();
+        const qShow = document.getElementById("qShow");
+        const newInput = inputValue * 1;
+        console.log({ newInput });
+
+        for (let i = 1; i <= newInput; i++) {
+          let qBox = document.createElement("div");
+          qBox.classList.add("qBox");
+
+          let qIndex = document.createElement("div");
+          qIndex.classList.add("qIndex");
+          qIndex.innerText = i;
+          qBox.append(qIndex);
+          documentFragment.append(qBox);
+        }
+        qShow.innerHTML = "";
+        qShow.appendChild(documentFragment);
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -19,7 +41,7 @@
         <div class="quantity">
           <div class="qContainer">
             <h4 class="qText">Quantity</h4>
-            <form>
+            <form id="form" onsubmit="getData();return false">
               <input
                 id="input"
                 type="text"
@@ -33,13 +55,7 @@
         </div>
       </div>
       <div class="columnTwo">
-        <div class="qShow">
-          <%[1,2,3].forEach((show) =>{ %>
-          <div class="qBox">
-            <div class="qIndex"><%= show %></div>
-          </div>
-          <% }) %>
-        </div>
+        <div class="qShow" id="qShow"></div>
         <div class="smallBox" id="smallBoxTwo">OBJ3</div>
       </div>
     </div>
