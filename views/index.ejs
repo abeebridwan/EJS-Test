@@ -34,9 +34,11 @@
       </div>
       <div class="columnTwo">
         <div class="qShow">
+          <%[1,2,3].forEach((show) =>{ %>
           <div class="qBox">
-            <div class="qIndex">1</div>
+            <div class="qIndex"><%= show %></div>
           </div>
+          <% }) %>
         </div>
         <div class="smallBox" id="smallBoxTwo">OBJ3</div>
       </div>

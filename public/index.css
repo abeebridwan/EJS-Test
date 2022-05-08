@@ -12,19 +12,20 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow: scroll;
 }
 body {
   padding: 2rem 2rem 2rem 3rem;
-  height: calc(100vh - 4rem);
+  overflow: scroll;
+}
+.container {
+  margin: auto;
+  min-height: calc(100vh - 6rem);
   min-width: 350px;
   max-width: 2000px;
   max-height: 2000px;
-  margin: auto;
-}
-.container {
   display: flex;
   border: 2px solid #969997;
-  height: 100%;
 }
 .columnOne {
   flex-basis: 35%;
@@ -114,6 +115,10 @@ body {
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
+  margin-top: 4rem;
+}
+.qBox:first-child {
+  margin-top: 0;
 }
 .qIndex {
   height: 6rem;
