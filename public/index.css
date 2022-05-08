@@ -47,7 +47,7 @@ body {
   font-size: 2rem;
 }
 .qContainer {
-  background-color: #adadad;
+  background-color: #bfbfbf;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,6 +66,7 @@ body {
   margin-top: 1.3rem;
   width: 55%;
   border: 2px solid #969997;
+  background-color: #e3e1e1;
 }
 #input::placeholder {
   color: inherit;
@@ -89,7 +90,24 @@ body {
   font-size: 1.6rem;
   font-weight: bold;
   padding: 2rem;
-  width: 10%;
+  width: 4rem;
   border-top: 2px solid #969997;
   border-right: 2px solid #969997;
+}
+.columnTwo {
+  flex-grow: 1;
+  background-color: #e3e1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.qShow {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+#smallBoxTwo {
+  border-right: 0;
+  border-left: 2px solid #969997;
+  background-color: #bfbfbf;
 }
