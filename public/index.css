@@ -14,8 +14,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  padding: 2rem;
-  height: 100vh;
+  padding: 2rem 2rem 2rem 3rem;
+  height: calc(100vh - 4rem);
   min-width: 350px;
   max-width: 2000px;
   max-height: 2000px;
@@ -108,7 +108,6 @@ body {
   padding: 5rem 0;
 }
 .qBox {
-  width: 100%;
   border: 2px solid #969997;
   background-color: #b5b3b3;
   height: 9rem;
