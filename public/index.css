@@ -10,14 +10,18 @@
   font-family: "Roboto", sans-serif;
 }
 html {
+  position: relative;
   box-sizing: border-box;
   font-size: 62.5%;
-  overflow: scroll;
+  overflow: auto;
 }
+
 body {
+  position: relative;
   padding: 2rem 2rem 2rem 3rem;
-  overflow: scroll;
+  overflow: auto;
 }
+
 .container {
   margin: auto;
   min-height: calc(100vh - 6rem);
