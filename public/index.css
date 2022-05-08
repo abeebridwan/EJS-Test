@@ -23,10 +23,11 @@ body {
   height: 100%;
 }
 .columnOne {
-  flex-basis: 20%;
+  flex-basis: 25%;
   background-color: #c5c9c6;
   display: flex;
   align-items: flex-end;
+  border-right: 2px solid #969997;
 }
 .quantity {
   display: grid;
@@ -34,6 +35,7 @@ body {
   align-content: space-between;
   height: 60%;
   width: 100%;
+  font-size: 2rem;
 }
 .qContainer {
   background-color: #adadad;
@@ -42,7 +44,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2rem;
   padding: 1rem 0;
   border-top: 2px solid #969997;
   border-bottom: 2px solid #969997;
@@ -52,7 +53,7 @@ body {
 }
 #input {
   text-align: center;
-  padding: 0.5rem 0rem;
+  padding: 0.6rem 0rem;
   margin-top: 1.3rem;
   width: 55%;
   border: 2px solid #969997;
@@ -60,17 +61,29 @@ body {
 #input::-webkit-input-placeholder {
   color: inherit;
   font-weight: bold;
+  font-size: 1.6rem;
 }
 #input:-ms-input-placeholder {
   color: inherit;
   font-weight: bold;
+  font-size: 1.6rem;
 }
 #input::placeholder {
   color: inherit;
   font-weight: bold;
+  font-size: 1.6rem;
 }
 #input:focus {
   outline: 0;
 }
 .smallBox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 2rem;
+  width: 10%;
+  border-top: 2px solid #969997;
+  border-right: 2px solid #969997;
 }
