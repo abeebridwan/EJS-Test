@@ -16,6 +16,10 @@ html {
 body {
   padding: 2rem;
   height: 100vh;
+  min-width: 350px;
+  max-width: 2000px;
+  max-height: 2000px;
+  margin: auto;
 }
 .container {
   display: flex;
@@ -23,11 +27,16 @@ body {
   height: 100%;
 }
 .columnOne {
-  flex-basis: 25%;
+  flex-basis: 35%;
   background-color: #c5c9c6;
   display: flex;
   align-items: flex-end;
   border-right: 2px solid #969997;
+}
+@media screen and (min-width: 600px) {
+  .columnOne {
+    flex-basis: 27%;
+  }
 }
 .quantity {
   display: grid;
@@ -58,20 +67,17 @@ body {
   width: 55%;
   border: 2px solid #969997;
 }
-#input::-webkit-input-placeholder {
-  color: inherit;
-  font-weight: bold;
-  font-size: 1.6rem;
-}
-#input:-ms-input-placeholder {
-  color: inherit;
-  font-weight: bold;
-  font-size: 1.6rem;
-}
 #input::placeholder {
   color: inherit;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 600px) {
+  #input::placeholder {
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
 }
 #input:focus {
   outline: 0;
